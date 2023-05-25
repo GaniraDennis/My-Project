@@ -544,6 +544,9 @@ footer.footer .move-up span:hover{
 @media only screen and (max-width: 750px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
+        align-items: center;
+        justify-content: right;
+      
     }
 
     .nav .toggle-collapse{
