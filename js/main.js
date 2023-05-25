@@ -109,3 +109,32 @@ $('#toggle').click(function() {
 
     setInterval(nextSlide, 3000);
 });
+
+
+// Add JavaScript for the 3D animation using a library of your choice
+// Make sure to include the necessary scripts and initialize the animation
+// Example using Three.js library
+
+// Initialize the canvas and scene
+var canvas = document.getElementById('animation-canvas');
+var renderer = new THREE.WebGLRenderer({ canvas: canvas });
+var scene = new THREE.Scene();
+
+// Add your 3D objects, lights, and other animations here
+// Example: Create a rotating cube
+var geometry = new THREE.BoxGeometry(1, 1, 1);
+var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+var cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  // Add animation logic here, e.g., rotate the cube
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
+
+  renderer.render(scene, camera);
+}
+
+animate();
