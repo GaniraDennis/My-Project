@@ -793,7 +793,7 @@ overflow: hidden;
     margin: 0 4px;
     padding: 4px;
     color: #000000;
-    font-size: 34px;
+    font-size: 18px;
     transform: color 0.3s ease;
 }
 .item-team-social-links a:hover{
@@ -1180,7 +1180,7 @@ box-shadow: 0px 35px 77px -17px rgba(28, 245, 198, 0.64);
   }
   
   .contact_us_6 .text-blk.contactus-subhead {
-    color: #9c9c9c;
+    color: #2ae3f0;
     width: 300px;
     margin-top: 0px;
     margin-right: auto;
@@ -1301,7 +1301,7 @@ box-shadow: 0px 35px 77px -17px rgba(28, 245, 198, 0.64);
     margin-right: 0px;
     margin-bottom: 5px;
     margin-left: 0px;
-    color: #9c9c9c;
+    color: #05b8d8;
   }
   
   .contact_us_6 ::placeholder {
@@ -1325,7 +1325,7 @@ box-shadow: 0px 35px 77px -17px rgba(28, 245, 198, 0.64);
   }
   
   .contact_us_6 .text-blk.contactus-subhead.color {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .contact_us_6 .map-box {
@@ -1353,7 +1353,7 @@ box-shadow: 0px 35px 77px -17px rgba(28, 245, 198, 0.64);
     margin-right: 0px;
     margin-bottom: 10px;
     margin-left: 0px;
-    color: #2cd8f75b;
+    color: #57d6ec5b;
   }
   
   .contact_us_6 .text-blk.map-contactus-subhead {
@@ -1827,5 +1827,53 @@ body {
 
   .wk-mobile-12 {
     width: 100%;
+  }
+}
+
+#gallery {
+  line-height:0;
+  -webkit-column-count:5; /* split it into 5 columns */
+  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -moz-column-count:5;
+  -moz-column-gap:5px;
+  column-count:5;
+  column-gap:5px;
+}
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+  filter: grayscale(100%);
+  transition: filter 2s ease-out;
+}
+#gallery img:hover {
+  filter:none;
+}
+@media (max-width: 1200px) {
+  #gallery {
+   -moz-column-count:    4;
+   -webkit-column-count: 4;
+   column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #gallery {
+   -moz-column-count:    3;
+   -webkit-column-count: 3;
+   column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+   -moz-column-count:    2;
+   -webkit-column-count: 2;
+   column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #gallery {
+   -moz-column-count:    1;
+   -webkit-column-count: 1;
+   column-count:         1;
   }
 }
